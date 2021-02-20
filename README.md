@@ -19,8 +19,8 @@ if you need to change anything please fork the repository
 
 ### Body raw(json)
   {
-    "username": "ndagano@gmail.com",
-    "password": "ndagano"
+    "username": "username",
+    "password": "password"
   }
 
 

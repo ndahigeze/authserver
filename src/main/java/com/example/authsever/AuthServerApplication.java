@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
 
-@EnableAuthorizationServer
+
 @SpringBootApplication
-@EnableResourceServer
 @RestController
 public class AuthServerApplication {
 

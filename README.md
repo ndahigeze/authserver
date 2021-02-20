@@ -15,6 +15,7 @@ if you need to change anything please fork the repository
 ### Authorization Basic Auth
 
   Username [client_id]
+  
   Password [client_secret]
 
 ### Body raw(json)

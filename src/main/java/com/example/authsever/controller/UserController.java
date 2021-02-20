@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("auth")
 public class UserController {
 
     @Autowired
     private UserRepository userRepository;
 
-    @RequestMapping(value = "auth",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "signup",method = RequestMethod.POST,consumes = MediaType.APPLICATION_JSON_VALUE,produces = MediaType.APPLICATION_JSON_VALUE)
     public String createUser(@RequestBody SystemUser user){
         BCryptPasswordEncoder b=new BCryptPasswordEncoder();
         user.setPassword(b.encode(user.getPassword()));
